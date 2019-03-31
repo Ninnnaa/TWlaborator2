@@ -35,6 +35,10 @@ background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full
 .navbar-dark .navbar-nav .nav-link{
   color: white;
 }
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #FF0000;
+}
 
 /*imagine*/
 .hero-wrap {
@@ -66,7 +70,9 @@ background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full
   margin-bottom: 0;
   padding: 2rem 0 3.5rem;
 }
-
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
 
 .myButton {
 	background-color:#000000;
@@ -124,98 +130,107 @@ background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full
         top: -14px;
     }
 }
-/*footer*/
-.header-font {
-  font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #fd1506;
-}
-.fa-facebook{
-    color:#3b5998;
-}
-.fa-linkedin{
-    color:#0077B5;
-}
-.fa-twitter{
-    color:#4099FF;
-}
-.fa-google{
-    color:#d34836;
-}
-.bg-primary {
- background-color: #000 !important;
+#myFooter {
+    background-color: #3c3d41;
+    color: white;
+    padding-top: 30px;
 }
 
-.bg-circle
-{
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  padding: 14px 4px;
-  color: #ececec;
-  text-align: center;
-  border-radius: 50%;
+#myFooter .footer-copyright {
+    background-color: #333333;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
 }
 
-.bg-circle-outline
-{
-  width: 50px;
-  height: 50px;
-  color:smoke;
-  padding: 8px 2px;
-  border: 2px solid;
-  border-color: smoke;
-  border-radius: 50%;
+#myFooter .row {
+    margin-bottom: 60px;
 }
 
+#myFooter .navbar-brand {
+    margin-top: 45px;
+    height: 65px;
+}
 
-.bg-circle a, a:hover, .media a:focus
-{
-  text-decoration: none !important;
-  outline: none;
-  color: #ececec;
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
 }
-.bg-circle-outline a, a:hover, .media a:focus
-{
-  text-decoration: none !important;
-  outline: none;
-  color: #ececec;
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
 }
-.footer {
-	background: #EDEFF1;
-	height: auto;
-	padding-bottom: 30px;
-	position: relative;
-	width: 100%;
-	border-bottom: 1px solid #CCCCCC;
-	border-top: 1px solid #DDDDDD;
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
 }
-.footer p {
-	margin: 0;
+
+#myFooter h2 a{
+    font-size: 20px;
+    text-align: center;
+
+    color: #fff;
 }
-.footer img {
-	max-width: 100%;
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
 }
-.footer h3 {
-	border-bottom: 1px solid #BAC1C8;
-	color: #54697E;
-	font-size: 18px;
-	font-weight: 600;
-	line-height: 27px;
-	padding: 40px 0 10px;
-	text-transform: uppercase;
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: #FF0000;
 }
-.footer ul {
-	font-size: 13px;
-	list-style-type: none;
-	margin-left: 0;
-	padding-left: 0;
-	margin-top: 15px;
-	color: #7F8C8D;
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
 }
-.footer ul li a {
-	padding: 0 0 5px 0;
-	display: block;
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
 }
-.footer a {
-	color: #78828D
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+}
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .google:hover {
+    color: #ef1a1a;
+}
+
+#myFooter .twitter:hover {
+    color: #00aced;
+}
+
+#myFooter .btn {
+    color: white;
+    background-color: #FF0000;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
 }
